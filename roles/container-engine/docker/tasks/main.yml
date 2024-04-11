@@ -113,6 +113,7 @@
   module_defaults:
     apt:
       update_cache: true
+#      allow_downgrade: true
     dnf:
       enablerepo: "{{ docker_package_info.enablerepo | default(omit) }}"
       disablerepo: "{{ docker_package_info.disablerepo | default(omit) }}"
